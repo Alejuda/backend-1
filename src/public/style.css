@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overscroll-behavior-x: none;
+}
+
+.bg_img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.contenedor-xl {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.index-container {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: brightness(40%) blur(10px);
+  border-radius: 10px;
+  overscroll-behavior: none;
+  margin: auto;
+  padding: 30px 50px;
+  width: 500px;
+  color: white;
+}
+
+.index-container > a {
+  text-decoration: none;
+
+  font-weight: 600;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: opacity 100ms;
+  text-align: center;
+  background-color: transparent;
+  font-weight: 300;
+  color: rgb(234, 222, 0);
+  border: 2px solid rgb(234, 222, 0);
+}
+
+.index-container > a:hover {
+  background-color: rgba(234, 222, 0, 0.047);
+}
+
+.form_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  margin: 30px auto;
+  padding: 30px 50px;
+  width: 500px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  backdrop-filter: brightness(40%) blur(10px);
+  border-radius: 10px;
+  overscroll-behavior: none;
+}
+
+.form > input,
+select,
+textarea {
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+  padding: 4px 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 3px solid rgb(234, 222, 0);
+  color: rgb(200, 200, 200);
+}
+
+.form > input::placeholder {
+  color: rgb(200, 200, 200);
+  font-weight: 300;
+}
+
+.form > input:focus,
+select:focus,
+textarea:focus {
+  background-color: rgba(176, 169, 66, 0.08);
+}
+.form > label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+
+#terms,
+#subscribe,
+#recordar,
+#mantener {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  background-color: rgb(234, 222, 0);
+  border: none;
+  color: black;
+  font-weight: 600;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: opacity 100ms;
+}
+
+button:hover {
+  background-color: rgb(234, 222, 0);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#birth::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.second-btn {
+  font-weight: 600;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: opacity 100ms;
+  text-align: center;
+  background-color: transparent;
+  font-weight: 300;
+  color: rgb(234, 222, 0);
+  border: 2px solid rgb(234, 222, 0);
+}
+
+.second-btn:hover {
+  background-color: rgba(234, 222, 0, 0.047);
+}
+
+#mensaje {
+  resize: none;
+  height: 150px;
+}
